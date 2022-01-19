@@ -1,5 +1,12 @@
 import "../App.css";
-import { Nav } from "reactstrap";
+import {
+  UncontrolledDropdown,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  Nav,
+} from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPaintBrush,
@@ -24,17 +31,8 @@ function Header() {
       <Navbar bg="faded" expand={false} style={{ listStyle: "none" }}>
         <Container fluid>
           <Navbar.Brand href="/" style={{ color: "black" }}>
-            <h1>
-              <FontAwesomeIcon
-                icon={faPaintBrush}
-                style={{
-                  color: "rgb(201, 84, 6)",
-                  fontFamily:
-                    "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
-                }}
-              />{" "}
-              Bethany Stanley: Web Experience Engineer
-            </h1>
+            <h1>Bethany Stanley</h1>
+            <h2 className="small">Web, Notary, Music, and Writing Services</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
@@ -75,6 +73,24 @@ function Header() {
                   <Link className="navbar-link" to="/about">
                     About
                   </Link>
+                </NavItem>
+                <NavItem className="navbar-link p-0">
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle
+                      className="my-0 text-dark"
+                      style={{ paddingLeft: ".5em" }}
+                      nav
+                      caret
+                    >
+                      Services
+                    </DropdownToggle>
+                    <DropdownMenu style={{ border: "0" }}>
+                      <DropdownItem>Web Services</DropdownItem>
+                      <DropdownItem>Notary</DropdownItem>
+                      <DropdownItem>Music</DropdownItem>
+                      <DropdownItem>Writing</DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
                 </NavItem>
                 <NavItem>
                   <Link className="navbar-link" to="/contact">
