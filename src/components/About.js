@@ -46,7 +46,7 @@ function About() {
             always been driven by challenge, and am exhilarated when I am able
             to put all my focus into solving a problem. I enjoy when I can be a
             part of a create and collaborative team. I have realized that
-            development can give me these desires.
+            development can give me these desires
           </p>
 
           <br />
