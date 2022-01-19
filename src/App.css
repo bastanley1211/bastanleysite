@@ -1,0 +1,137 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+}
+.header {
+  border-bottom: rgba(0, 0, 0, 0.048);
+  border-bottom-width: 0.1em;
+  border-bottom-style: solid;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.header h1 {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  padding: 0.5em;
+  margin: 0;
+}
+
+.navbar-link {
+  font-size: 1.5em;
+  padding: 0.5em;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.781);
+}
+
+.navbar-link:hover {
+  color: rgb(201, 84, 6);
+}
+
+#jumbotron {
+  background-image: url("https://images.pexels.com/photos/4448861/pexels-photo-4448861.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.jumbotron-header-text {
+  text-align: center;
+  padding-top: 75px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main-content {
+  color: black;
+  padding: 0.2em;
+  margin: 1em;
+}
+
+.main-h-one {
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.hover-list {
+  margin: 1em;
+  color: rgba(0, 0, 0, 0.514);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.hover-list h3:hover {
+  color: rgb(201, 84, 6);
+  font-size: 1.85em;
+  cursor: pointer;
+  transition: font-size 500ms ease-in;
+}
+
+.hover-list h3:focus {
+  color: rgb(201, 84, 6);
+  font-size: 1.85em;
+  cursor: help;
+  transition: font-size 500ms ease-in;
+}
+
+.hover-list h3::-moz-focus-inner {
+  color: black;
+  font-size: 1.85em;
+  cursor: help;
+  transition: font-size 500ms ease-in;
+}
+
+.site-footer {
+  color: black;
+  background-color: white;
+  padding: 0.5em;
+  padding-left: 6em;
+  border-top: rgba(0, 0, 0, 0.047);
+  border-width: 0.1em;
+  border-top-style: solid;
+}
+
+.site-footer h1 {
+  font-size: 1em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.site-footer p {
+  font-size: 0.75em;
+}
+
+.footer-link {
+  font-size: 0.75em;
+  list-style: none;
+}
+
+.footer-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  color: rgb(201, 84, 6);
+}
+
+.footer-col {
+  border-right-color: rgba(0, 0, 0, 0.047);
+  border-right-style: solid;
+  border-right-width: 0.1em;
+}
+
+.footer-col-title {
+  margin-left: 1.9em;
+}
+
+.social-icon {
+  color: black;
+}
+
+.social-icon:hover {
+  color: rgb(201, 84, 6);
+}
