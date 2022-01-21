@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Blog from "./components/Blog";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,13 @@ function App() {
         <Route path="/" element={<HomeRoute />} />
         <Route path="/about" element={<AboutRoute />} />
         <Route path="/contact" element={<ContactRoute />} />
+        <Route
+          path="/blog"
+          component={() => {
+            window.location.href = "https://blog.bethanystanley.co/";
+            return null;
+          }}
+        />
       </Routes>
       <Main />
       <Footer />
@@ -34,4 +42,7 @@ function ContactRoute() {
   return <Contact />;
 }
 
+function BlogRoute() {
+  return <Blog />;
+}
 export default App;

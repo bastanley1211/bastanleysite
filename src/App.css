@@ -1,17 +1,29 @@
-html {
-  min-height: 100%;
-  position: relative;
-}
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+html,
 body {
+  min-height: 100vh;
+  position: relative;
   margin: 0;
   padding: 0;
-  border-spacing: 0;
 }
+body {
+  padding-bottom: 150px;
+}
+
+/*text universal */
+
+h1,
+h2,
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 .header {
+  background-image: white;
   border-bottom: rgba(0, 0, 0, 0.048);
   border-bottom-width: 0.1em;
   border-bottom-style: solid;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .header h1 {
@@ -27,10 +39,20 @@ body {
   padding: 0.5em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.781);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .navbar-link:hover {
   color: rgb(201, 84, 6);
+}
+
+#offcanvasNavbar {
+  background-image: linear-gradient(white, white, rgb(235, 196, 99));
+}
+
+.external-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.781);
 }
 
 #jumbotron {
@@ -43,61 +65,48 @@ body {
 .jumbotron-header-text {
   text-align: center;
   padding-top: 75px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .main-content {
   color: black;
   padding: 0.2em;
-  margin: 1em;
+  margin: 0;
 }
 
 .main-h-one {
   padding: 0.5em;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.hover-list {
-  margin: 1em;
-  color: rgba(0, 0, 0, 0.514);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.hover-list h3:hover {
-  color: rgb(201, 84, 6);
-  font-size: 1.85em;
-  cursor: pointer;
-  transition: font-size 500ms ease-in;
-}
-
-.hover-list h3:focus {
-  color: rgb(201, 84, 6);
-  font-size: 1.85em;
-  cursor: help;
-  transition: font-size 500ms ease-in;
-}
-
-.hover-list h3::-moz-focus-inner {
-  color: black;
-  font-size: 1.85em;
-  cursor: help;
-  transition: font-size 500ms ease-in;
-}
-
-.site-footer {
-  color: black;
+.slide {
   background-color: white;
+  height: 250px;
+}
+
+.slide:hover {
+  cursor: pointer;
+}
+
+.contact-form {
+  overflow-y: auto;
+}
+
+footer {
+  color: black;
+  background-image: linear-gradient(white, rgb(235, 196, 99));
   padding: 0.5em;
-  padding-left: 6em;
-  border-top: rgba(0, 0, 0, 0.047);
-  border-width: 0.1em;
-  border-top-style: solid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
 }
 
 .site-footer h1 {
   font-size: 1em;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .site-footer p {
@@ -126,6 +135,7 @@ body {
 
 .footer-col-title {
   margin-left: 1.9em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .social-icon {
