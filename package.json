@@ -1,7 +1,8 @@
 {
-  "name": "notarysite",
+  "name": "bethanystanleysite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://bethanystanley.co",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -52,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "2.5.1"
   }
 }
