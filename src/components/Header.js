@@ -26,10 +26,16 @@ function Header() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <>
-      <div className="header container-fluid"></div>
-      <Navbar bg="faded" expand={false} style={{ listStyle: "none" }}>
+      <Navbar
+        sticky="top"
+        bg="faded"
+        expand={false}
+        style={{ listStyle: "none" }}
+        className="navbar"
+      >
         <Container fluid>
           <Navbar.Brand href="/" style={{ color: "black" }}>
             <h1 style={{ fontFamily: "'Satisfy', cursive", fontSize: "2em" }}>

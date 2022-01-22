@@ -6,9 +6,26 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
-body {
-  padding-bottom: 150px;
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-bottom: 300px;
+  }
+}
+@media screen and (min-width: 767px) {
+  body {
+    padding-bottom: 200px;
+  }
+}
+
+.sticky-top {
+  background-image: linear-gradient(white 40%, transparent);
+}
+
+.navbar-toggler {
+  border: 0 solid transparent !important;
 }
 
 /*text universal */
@@ -34,6 +51,12 @@ h3 {
   margin: 0;
 }
 
+.navbar {
+  width: 100%;
+  transition: top 0.3s;
+  display: block;
+}
+
 .navbar-link {
   font-size: 1.5em;
   padding: 0.5em;
@@ -55,38 +78,99 @@ h3 {
   color: rgba(0, 0, 0, 0.781);
 }
 
-#jumbotron {
-  background-image: url("https://images.pexels.com/photos/4448861/pexels-photo-4448861.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  height: 300px;
-  background-position: center;
-  background-size: cover;
-}
-
 .jumbotron-header-text {
   text-align: center;
   padding-top: 75px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.main-content {
-  color: black;
-  padding: 0.2em;
-  margin: 0;
+.jumbotron-fluid span {
+  font-family: "Satisfy", cursive;
+  font-weight: bold;
 }
 
-.main-h-one {
-  padding: 0.5em;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+#homeMainContent {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    rgb(235, 196, 99),
+    rgb(235, 196, 99),
+    rgb(235, 196, 99),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    rgb(235, 196, 99),
+    rgb(235, 196, 99),
+    rgb(235, 196, 99),
+    transparent 80%
+  );
 }
 
 .slide {
-  background-color: white;
-  height: 250px;
+  background-image: linear-gradient(
+    rgb(235, 196, 99),
+    rgb(255, 235, 183),
+    white 80%
+  );
+  height: 550px;
+}
+
+.slide span {
+  font-family: "Satisfy", cursive;
+  color: rgb(235, 196, 99);
+}
+
+.slide-one {
+  background-image: url("img/notaryPhoto.jpg");
+  background-position-y: 40%;
+  background-position-x: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slide-two {
+  background-image: url("img/musicSlidePhoto.JPG");
+  background-position-y: 40%;
+  background-position-x: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slide-three {
+  background-image: url("img/writerSlide.jpg");
+  background-position-y: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .slide:hover {
   cursor: pointer;
+}
+
+.slide-cap {
+  background-color: rgba(0, 0, 0, 0.712);
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    height: 250px;
+  }
+
+  .slide-one,
+  .slide-two {
+    background-size: cover;
+  }
+}
+
+.slide-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  opacity: 0.6;
 }
 
 .contact-form {
@@ -95,13 +179,14 @@ h3 {
 
 footer {
   color: black;
-  background-image: linear-gradient(white, rgb(235, 196, 99));
+  background-image: linear-gradient(transparent, rgb(235, 196, 99));
   padding: 0.5em;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: max-content;
+  z-index: 10;
 }
 
 .site-footer h1 {
@@ -144,4 +229,17 @@ footer {
 
 .social-icon:hover {
   color: rgb(201, 84, 6);
+}
+
+.top-arrow {
+  color: rgb(201, 84, 6);
+  font-size: 1.75em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.top-arrow:hover {
+  cursor: pointer;
 }

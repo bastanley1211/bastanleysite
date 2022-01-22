@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
@@ -7,6 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import { Routes, Route } from "react-router-dom";
+import ScrollButton from "./components/ScrollButton";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         />
       </Routes>
       <Main />
+      <ScrollButton />
       <Footer />
     </>
   );
